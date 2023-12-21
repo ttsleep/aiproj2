@@ -1,0 +1,3 @@
+# 环境 pt37
+# TT100K数据集 45类，训练集4552张，验证集2314张
+# python manage.py runserver

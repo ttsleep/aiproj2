@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>交通标志识别</title>
+
+	<style>
+
+		.div_body{
+			width:100%;
+			height:1000px;
+			background-color:#bbb;
+			margin-top:10px;
+		}
+
+        .div_photo{
+               height:300px;
+               width:40%;
+               float:left;
+               margin-left:30px;
+               margin-top:10px;
+        }
+	</style>
+
+</head>
+<body>
+    <div class="div_body">
+        <div>
+        <h1>图片识别结果</h1>
+        <a href="/detection">返回></a>
+        </div>
+
+        <div class="div_photo">
+            <h3>原图</h3>
+            <img id="input" src="/static/detected_pics/a1.png" width="512px" height="512px" alt=""/>
+        </div>
+
+        <div class="div_photo">
+            <h3>yolov5</h3>
+            <img id="output1" src="/static/detected_pics/output_a1_1.png" width="512px" height="512px" alt=""/>
+        </div>
+
+</body>
+</html>

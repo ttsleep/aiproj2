@@ -1,0 +1,33 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+      <style>
+          body{}
+          .container{
+              padding-top: 350px;
+              line-height: 20px;
+          }
+
+      </style>
+      <title>交通标志识别</title>
+  </head>
+
+  <body background="../static/imgs/beijing.jpeg" style=" background-repeat:no-repeat ;background-size:100% 100%;
+background-attachment: fixed;">
+  <a href="/detection/logout">Log out</a>
+
+  {% block content %}
+      <div class="container" style="text-align: center;">
+      <form method="post" enctype="multipart/form-data">
+          <input type="file" name="before_process">
+          <input type="submit" value="提交">
+      </form>
+            <p>支持png，jpg格式图片识别和mp4格式视频识别</p>
+      </div>
+
+
+  {% endblock %}
+  </body>
+
+</html>

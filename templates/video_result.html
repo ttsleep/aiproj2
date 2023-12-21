@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>交通标志识别</title>
+
+	<style>
+		.div_body{
+			width:100%;
+			height:1000px;
+			background-color:#bbb;
+			margin-top:10px;
+		}
+        .div_photo{
+               height:300px;
+               width:40%;
+               float:left;
+               margin-left:30px;
+               margin-top:10px;
+        }
+	</style>
+
+</head>
+<body>
+    <div class="div_body">
+        <div>
+        <h1>视频识别结果</h1>
+        <a href="/detection">返回></a>
+        </div>
+
+{#    </div>#}
+        <div class="div_photo">
+            <h3>原视频播放</h3>
+            <video width="512px" controls="controls">
+                <source src="/static/video_path/ori.mp4" type="video/mp4">
+                <object data="/static/video_path/ori.mp4" width="320" height="240">
+                    你的浏览器不支持该视频格式。 Your browser does not support this video format.
+                </object>
+            </video>
+        </div>
+
+        <div class="div_photo">
+            <h3>检测后视频播放</h3>
+            <video width="512px" controls="controls">
+                <source src="/static/video_path/output_a1_v.mp4" type="video/mp4">
+                <object data="/static/video_path/output_a1_v.mp4" width="320" height="240">
+                    你的浏览器不支持该视频格式。 Your browser does not support this video format.
+                </object>
+            </video>
+        </div>
+</body>
+</html>
